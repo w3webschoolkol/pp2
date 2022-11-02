@@ -1,0 +1,37 @@
+<script>
+	function Validate(){
+
+		const x=document.forms["myform"]["fname"].value;
+		const lname=document.forms["myform"]["lname"].value;
+
+		if (x=='') {
+			alert("First Name is empty");
+			return false;
+		}
+		else if(lname==''){
+			alert("Last Name is empty");
+			return false;
+		}
+
+	}
+
+</script>
+
+
+
+<form method="post" accept="" onsubmit="return Validate()" name="myform">
+<table>
+	<tr>
+		<td>First Name</td>
+		<td><input type="text" name="fname"></td>
+	</tr>
+	<tr>
+		<td>Last Name</td>
+		<td><input type="text" name="lname"></td>
+	</tr>
+	<tr>
+		
+		<td><input type="submit" name="submit"></td>
+	</tr>
+</table>
+</form>

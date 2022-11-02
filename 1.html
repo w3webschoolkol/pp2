@@ -1,0 +1,41 @@
+<script>
+	
+function Hello(){
+
+	const dd="This is test";
+	document.getElementById("Demo").innerHTML=dd;
+}
+
+
+function Hello2(){
+
+alert('This is test');
+
+}
+
+function Testing(x){
+
+document.bgColor=x;
+
+}
+
+
+</script>
+
+<body onresize="Hello2()">
+
+<h1 id="Demo"></h1>
+
+
+<button onclick="Hello()">Click Me</button>
+
+<button onmouseout ="Hello2()">Click Me2</button>
+
+
+<select onchange="Testing(this.value)">
+	<option>Select Color</option>
+	<option value="red">Red</option>
+	<option value="Green">Green</option>
+	<option value="Black">Black</option>
+</select>
+</body>
